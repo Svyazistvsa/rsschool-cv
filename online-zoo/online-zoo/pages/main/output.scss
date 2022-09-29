@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    max-width: 1600px;                    
+}
+
+.main_menu a, .logo, .coper, .textBlock, .linkOn span {
+    color: white;
+    font-family: 'Arial';
+    font-style: normal;
+} 
+
+header, .main_menu, .logo, .bamboo, .coper, .round, .textBlock, .linkOn, .linkOn span {
+    position: absolute;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    max-width:1600px;
+    height: 80px;
+    background: black;
+}
+.main_menu{
+    left: 365px;
+    display: flex;
+    align-items: center;
+    width: 470px;
+    justify-content: space-between;
+    list-style-type: none;    
+    a{
+        display: block;
+        text-decoration: none;
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    a:hover{
+        color: #F9804B;
+    }
+}
+.logo{
+    box-sizing: border-box;
+    
+    
+    width: 82px;
+    height: 52px;
+    left: 220px;
+    top: 16px;
+
+    border: 1px solid white;
+    border-radius: 2px;
+
+    
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    /* or 23px */
+
+    text-align: center;
+
+    
+
+    border: 1.18841px solid white;
+}
+.bamboo{
+    
+    left: 231px;
+    top: 37px;
+}
+.coper{
+    
+    width: 1500px;
+    height: 22px;
+    left: 1283px;
+    top: 29px;
+
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    
+}
+.round{
+    
+    width: 465px;
+    height: 465px;
+    left: calc(50% - 465px/2 + 239.5px);
+    top: 92px;
+
+    /* orange */
+
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+.textBlock{
+    span{
+        color: #FFEE2E;
+    }
+
+    width: 500.31px;
+    height: 400px;
+    left: calc(50% - 500.31px/2 + 330.15px);
+    top: 166px;
+
+    
+    font-weight:500;
+    font-size: 106.496px;
+    line-height: 75%;
+    /* or 80px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    
+
+}
+.linkOn {
+    
+    width: 298px;
+    height: 54px;
+    left: calc(50% - 298px/2 + 332px);
+    top: 626px;
+
+    /* orange */
+
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+
+    span{
+        
+        width: 292px;
+        height: 22px;
+        left: 5px;
+        top: 16px;
+
+        /* btn. */
+
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        text-align: center;
+        text-transform: uppercase;
+
+    
+
+}
+}
