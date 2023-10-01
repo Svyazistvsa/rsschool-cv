@@ -2,15 +2,18 @@
 ---
 
 ## Sergey Vlasov
+
 ===
 
 #### Beginner Frontend Developer
+
 ===
 
 #### Contact information:
 __Phone: +79228005978__
 __E-mail: sviazist.vsa@gmail.com__
 __gitHub: Svyazistvsa__
+
 ===
 
 
