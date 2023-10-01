@@ -1,2 +1,2 @@
 
-https://Svyazistvsa.github.io/rsschool-cv/cv
+https://Svyazistvsa.github.io/rsschool-cv/cv/
