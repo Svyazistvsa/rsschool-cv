@@ -28,6 +28,10 @@ I'm working on metallurgical plant. My profession is locksmith. I'm wont change 
 
 ***
 
+### Code example
+
+A script describing the operation of the start button.
+
 ```
 "use strict"
 
