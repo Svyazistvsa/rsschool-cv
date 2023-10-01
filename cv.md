@@ -1,1 +1,1 @@
-[rsschool-cv]()
+[rsschool-cv]:https://Svyazistvsa.github.io/rsschool-cv/cv
