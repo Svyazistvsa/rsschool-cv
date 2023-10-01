@@ -8,9 +8,9 @@
 ***
 
 #### Contact information:
-__Phone: +79228005978__
-__E-mail: sviazist.vsa@gmail.com__
-__gitHub: Svyazistvsa__
+__Phone:__ +79228005978
+__E-mail:__ sviazist.vsa@gmail.com
+__gitHub:__ Svyazistvsa
 ***
 
 
