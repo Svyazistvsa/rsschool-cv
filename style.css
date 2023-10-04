@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 #container {
     display: flex;
     flex-direction: column;
@@ -6,13 +9,17 @@
     align-items: center;
     max-width: 1024px;
     min-width: 750px;
-    min-height: 100%;
+    min-height: 100vh;
     margin:0 auto;
+    background-color: rgb(207, 248, 232);
     #head {
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        height: 220px;
+        background-color: gray;
         #photo {
             width: 200px;
             height: 200px;
@@ -26,9 +33,13 @@
     }
     .content{
         width: 80%;
-        h2 {
-            display: block;
-            background: rgb(110, 112, 112);
+        .zag {
+            background-color: rgb(60, 212, 149);
+            border: 1px solid rgb(4, 105, 112);
+            border-radius: 10px;
+        }
+        .text {
+            
         }
     }
 }
