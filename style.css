@@ -90,7 +90,7 @@ ul>li {
     border-radius: 50px;
 }
 
-.myGit > span {
+.myGit > a, .logo > a {
     display: block;
     margin: 10% auto auto 10%;
     width: 100%;
@@ -104,6 +104,9 @@ ul>li {
     background-image: url(img/image/rs_school_js.svg);
     background-position: center;
     background-repeat: no-repeat;
-    /*background-size: cover;*/
     background-size: 80%;
+}
+
+.date {
+    font-size: 13pt;
 }
