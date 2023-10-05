@@ -20,11 +20,14 @@ body{
         justify-content: space-around;
         align-items: flex-end;
         height: 220px;
-        background-color: #666;
+        background: linear-gradient(#333, #999);
         #photo {
-            width: 200px;
-            height: 200px;
-            border: solid 6px #ccc;
+            position: relative;
+            top: 20px;
+            left: -30px;
+            width: 210px;
+            height: 210px;
+            border: solid 6px #999;
             border-radius: 50%;
             background-image: url(img/photo/myphoto.jpg);
             background-position: center;
@@ -48,7 +51,7 @@ body{
         justify-content: space-around;
         align-items: center;
         height: 150px;
-        background-color: #666;  
+        background: linear-gradient(#999, #333);  
         
     }
 }
