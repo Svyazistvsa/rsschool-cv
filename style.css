@@ -1,29 +1,30 @@
 body{
     margin: 0;
+    background: linear-gradient(#999, #333);
 }
 #container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     max-width: 1024px;
     min-width: 750px;
     min-height: 100vh;
     margin:0 auto;
-    background-color: rgb(207, 248, 232);
+    background-color: #f5f5f5;
     #head {
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-end;
         height: 220px;
-        background-color: gray;
+        background-color: #666;
         #photo {
             width: 200px;
             height: 200px;
-            border: solid 1px black;
+            border: solid 6px #ccc;
             border-radius: 50%;
             background-image: url(img/photo/myphoto.jpg);
             background-position: center;
@@ -34,12 +35,20 @@ body{
     .content{
         width: 80%;
         .zag {
-            background-color: rgb(60, 212, 149);
-            border: 1px solid rgb(4, 105, 112);
+            background-color:#666;
+            ;
+            border: 3px solid #ccc;
             border-radius: 10px;
         }
-        /*.text {*/
-        /*    */
-        /*}*/
+    }
+    .footer{ 
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        background-color: #666;  
+        
     }
 }
