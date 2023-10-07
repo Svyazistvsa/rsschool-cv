@@ -171,12 +171,12 @@ ul>li {
             left: 450px;
         }
 
-        .mainMenu {
+        .mainMenu, .contacts {
             display: none;
         }
-    }
+        .mainMenu.displayOn, .contacts.displayOn {
+            display: block;
+        }
 
-    .contacts{
-        display: none;
     }
-}
+}            
