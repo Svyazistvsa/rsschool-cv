@@ -19,9 +19,9 @@
             </div>
             <div class="contact">
                 <ul class="contacts">
-                    <li><img src="img/image/telephon.png" value="phne" class="icon">+79228005978</li>
-                    <li><img src="img/image/pngwing.com.png" value="phne" class="icon">sviazist.vsa@gmail.com</li>
-                    <li><img src="img/image/github.svg" value="phne" class="icon">Svyazistvsa</li>
+                    <li><img src="img/image/telephon.png" value="phone" class="icon">+79228005978</li>
+                    <li><img src="img/image/pngwing.com.png" value="gmail" class="icon">sviazist.vsa@gmail.com</li>
+                    <li><img src="img/image/github.svg" value="github" class="icon">Svyazistvsa</li>
                 </ul>
             </div>
         </header>
@@ -32,6 +32,12 @@
             <li>Myself</li>
             <li>Skills</li>
         </ul>
+        <script type="module">
+          import {togButton} from "/js/index.js";
+          document.body.onclick = function(e){
+                togButton( e, ".mmButton", ".mainMenu");
+          };
+        </script>
         <div class="content">
             <h2 class="zag">Briefly About Myself</h2>
             <p class="text">

@@ -1,15 +1,15 @@
 "use strict"
-
-let nav = document.querySelector(".mmButton"),
-    cont = document.querySelector(".cButton");
-
-    
-
-
-
-
-    document.onclick = (e) => {if(e.target ==nav) nav.classList.add("displayOn");}
-   
-    document.onclick = (e) => {if (e.target != nav) nav.classList.remove("displayOn");}
-            
-    document.onclick = (e) => {if (e.target != cont) cont.classList.remove("displayOn");}    
+      
+function togButton (e, classButton, classPlace) { 
+  
+  let button = document.querySelector(classButton),
+      place = document.querySelector(classPlace);
+  if(e.target == button){
+      place.classList.toggle( "displayOn" );
+  }
+else if(e.target != button){
+      place.classList.remove( "displayOn" );
+  }
+  preventDefault();
+};
+export {togButton};
