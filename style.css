@@ -149,7 +149,8 @@ ul>li {
 @media(max-width: 420px ) and (min-width:320px){
     
     #container{
-        max-width: 420px ;
+        max-width: 100vh;
+        min-height: 100vh;
         #head { 
             height: 320px;
             align-items: center;
