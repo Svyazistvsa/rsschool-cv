@@ -1,6 +1,6 @@
 "use strict"
       
-function togButton (e, classButton, classPlace) { 
+function togButton (e, classButton, classPlace) {
   
   let button = document.querySelector(classButton),
       place = document.querySelector(classPlace);

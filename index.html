@@ -34,17 +34,16 @@
             <li>Skills</li>
         </ul>
         <script type="module">
-          import {togButton} from "./js/index.js";
-          document.body.onclick = function(e){
-                togButton( e, ".mmButton", ".mainMenu");
-          };
-        </script>
-        <script type="module">
-              import {togButton} from "./js/index.js";
-              document.body.onclick = function(e){
-                togButton( e, ".cButton", ".contact");
-            };
-            </script>
+            import {togButton} from "./js/index.js";
+            document.body.onclick = function(e){
+                if(e.target.classList.contains("cButton")){
+                    togButton( e, ".cButton", ".contacts");
+                }
+                if(e.target.classList.contains("mmButton")){
+                    togButton( e, ".mmButton", ".mainMenu");
+                }                
+            }
+        </script>        
         <div class="content">
             <h2 class="zag">Briefly About Myself</h2>
             <p class="text">
