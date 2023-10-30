@@ -10,6 +10,6 @@ function togButton (e, classButton, classPlace) {
 else if(e.target != button){
       place.classList.remove( "displayOn" );
   }
-  preventDefault();
+  e.preventDefault();
 };
 export {togButton};

@@ -155,7 +155,7 @@ ul>li {
             align-items: center;
             #photo{
               width: 105px;
-              height: 105px;, 
+              height: 105px;
             }
         }
         
@@ -199,4 +199,5 @@ ul>li {
    
    .salute > h3 {
      font-size: 10pt;
-}            
+    }            
+}
