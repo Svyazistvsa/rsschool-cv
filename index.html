@@ -41,7 +41,10 @@
                 }
                 if(e.target.classList.contains("mmButton")){
                     togButton( e, ".mmButton", ".mainMenu");
-                }                
+                }
+                if(!e.target.classList.contains("cButton") && !e.target.classList.contains("mmButton")){
+                    document.querySelector(".displayOn").classList.remove("displayOn");
+                }            
             }
         </script>        
         <div class="content">
