@@ -149,20 +149,21 @@ ul>li {
 @media(max-width: 420px ) and (min-width:320px){
     
     #container{
-        max-width: 100vh;
-        min-height: 100vh;
+        max-width: 420px;
+        min-width: 320px;
         #head { 
             height: 320px;
+            flex-flow: column nowrap;
             align-items: center;
             #photo{
-              width: 105px;
-              height: 105px;
+              width: 150px;
+              height: 150px;
             }
         }
         
         .mmButton, .cButton {
             position: absolute;
-            left: 250px;
+            left: 150px;
             top: 230px;
             display: block;
             width: 80px;
@@ -174,7 +175,7 @@ ul>li {
         }
 
         .cButton{
-            left: 450px;
+            left: 250px;
         }
 
         .mainMenu, .contacts {
