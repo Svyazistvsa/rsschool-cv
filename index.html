@@ -24,6 +24,7 @@
                     <li><img src="img/image/github.svg" value="github" class="icon">Svyazistvsa</li>
                 </ul>
             </div>
+            
         </header>
         <button class="mmButton">navigation</button>
         <button class="cButton">contacts</button>
@@ -38,6 +39,12 @@
                 togButton( e, ".mmButton", ".mainMenu");
           };
         </script>
+        <script type="module">
+              import {togButton} from "/js/index.js";
+              document.body.onclick = function(e){
+                togButton( e, ".cButton", ".contact");
+            };
+            </script>
         <div class="content">
             <h2 class="zag">Briefly About Myself</h2>
             <p class="text">
