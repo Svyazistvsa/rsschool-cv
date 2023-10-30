@@ -156,6 +156,7 @@ ul>li {
             flex-flow: column nowrap;
             align-items: center;
             #photo{
+              margin-left: 50px;  
               width: 150px;
               height: 150px;
             }
@@ -163,8 +164,8 @@ ul>li {
         
         .mmButton, .cButton {
             position: absolute;
-            left: 150px;
-            top: 230px;
+            left: 20%;
+            top: 270px;
             display: block;
             width: 80px;
             height: 40px;
@@ -175,7 +176,20 @@ ul>li {
         }
 
         .cButton{
-            left: 250px;
+            left: auto;
+            right: 20%;
+        }
+
+        .mainMenu {
+            position: absolute;
+            left: 0;
+            margin: 0;
+            min-width: 80%;
+            height: 50%;
+            display: flex;
+            flex-wrap: column nowrap;
+            justify-content: space-around;
+            align-items: center;
         }
 
         .mainMenu, .contacts {
