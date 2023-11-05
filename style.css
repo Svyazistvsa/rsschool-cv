@@ -91,7 +91,7 @@ body{
     color: #ccc;
     text-shadow: 3px 3px #333;
 }
-ul{
+ul {
     list-style: none ;
 }
 
@@ -99,16 +99,25 @@ ul>li {
     margin-bottom: 10px;
 }
 
-.contentList > li{
-    list-style-type: square;
-    height: 12px;
+.skillsTab {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
-.contentList > li::marker {
-    color: #666;
-    font-size: 40px;
-    border: 1px solid #999;
-    
+.iconSkill {    
+    height: 70px;
+    display: block;
+    min-width: 80px;
+}
+
+.css, .js, .gulp, .sas { 
+    width: 63px;
+    height: 61px;
+}
+
+.css, .sas, .js {
+    margin-top: 6px;
 }
 
 .icon {
