@@ -29,9 +29,10 @@
         <button class="mmButton">navigation</button>
         <button class="cButton">contacts</button>
         <ul class="mainMenu">
-            <li>head</li>
-            <li>Myself</li>
-            <li>Skills</li>
+            <li><a href="#head">head</a></li>
+            <li><a href="#myself">Myself</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#recent">Recent projects</a></li>
         </ul>
         <script type="module">
             import {togButton} from "./js/index.js";
@@ -47,12 +48,12 @@
                 }
             }
         </script>        
-        <div class="content">
-            <h2 class="zag">Briefly About Myself</h2>
+        <main class="content">
+            <h2 class="zag" id="myself">Briefly About Myself</h2>
             <p class="text">
                 I'm working on metallurgical plant. My profession is locksmith. I'm wont change my profession and do what I've always dreamed of. That is the main reason why I’ve decided to engage in frontend more seriosly. Until recently, I was engaged exclusively ad a leisure activity.
             </p>
-            <h2 class="zag">Skills and Proficiency</h2>
+            <h2 class="zag" id="skills">Skills and Proficiency</h2>
             <div class="skillsTab">
                 <img src="img/image/html-5.svg" value="phone" class="iconSkill">
                 <img src="img/image/css3.svg" value="phone" class="iconSkill css">
@@ -61,7 +62,8 @@
                 <img src="img/image/gulp.svg" value="phone" class="iconSkill gulp">
                 <img src="img/image/sas.svg" value="phone" class="iconSkill sas">
             </div>
-        </div>
+            <h2 class="zag" id="recent">Recent projects</h2>
+        </main>
         <footer class="footer">
             <div class="myGit">
                 <a href="https://github.com/Svyazistvsa">SvyazisT</a>               
