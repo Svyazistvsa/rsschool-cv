@@ -254,5 +254,48 @@ ul>li {
    
    .salute > h3 {
      font-size: 10pt;
-    }    
+   }
+    
+   .showcase {
+     width: 280px;
+     height: 300px;
+     border: 3px solid #333;
+     border-radius: 6px;
+   }
+   
+  .showcase input, .showcase a{
+    position: relative;
+    top: 150px;
+    left: 14px;
+    font-size: 14pt;
+    background-color: #999;
+    border: 1px solid #333;
+    border-radius: 5px;
+    z-index: 5;
+  }
+  
+  .showcase a {
+    left: 40px;
+    text-decoration: none;
+    color: red;
+    display: inline-block;
+    padding: 1px 6px;
+  }
+   
+  .curtain {
+    position: relative;
+    top: -21px;
+    width: 280px;
+    height: 295px;
+    background-color: white;
+    opacity: 0.7;
+    filter: blur(4px);
+  }
+    
+   .one {
+     background-image: url(img/showcase/Two-skulls.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 100%;
+   }
 }
