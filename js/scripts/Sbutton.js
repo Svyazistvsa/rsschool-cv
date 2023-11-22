@@ -1,7 +1,15 @@
 "use strict"
 
-function showDescription(){
-  
+function showDescription(e){
+  let i = 0;
+  for(let name of e.target.classList){
+   if(i == 1){
+     let div = document.body.createElemen('div');
+     div.classList.add('desc');
+     
+     }
+   }
+  }
 }
 
 let descriptions = {
