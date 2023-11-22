@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/scripts/button.js" type="module"></script>
+    <script src="js/scripts/Sbutton.js" type="module"></script>
+    
     <script src="js/index.js" type="module"></script>
 </head>
 <body>
@@ -34,8 +36,11 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#recent">Recent projects</a></li>
         </ul>
+        
+        <main class="content">
         <script type="module">
             import {togButton} from "./js/index.js";
+            import {showDescription, descriptions} from "./js/index.js";
             document.body.onclick = function(e){
                 if(e.target.classList.contains("cButton")){
                     togButton( e, ".cButton", ".contacts");
@@ -46,9 +51,12 @@
                 if(!e.target.classList.contains("cButton") && !e.target.classList.contains("mmButton")){
                     if(document.querySelector(".displayOn")) document.querySelector(".displayOn").classList.remove("displayOn");
                 }
+                if(e.target.classList.contains("showcase")){
+                  showDescription();
+                }
             }
         </script>        
-        <main class="content">
+          
             <h2 class="zag" id="myself">Briefly About Myself</h2>
             <p class="text">
                 I'm working on metallurgical plant. My profession is locksmith. I'm wont change my profession and do what I've always dreamed of. That is the main reason why I’ve decided to engage in frontend more seriosly. Until recently, I was engaged exclusively ad a leisure activity.

@@ -1,4 +1,4 @@
 "use strikt"
 
 export {togButton} from "./scripts/button.js";
-export {showDescription, description} from "./scripts/Sbutton.js";
+export {showDescription, descriptions} from "./scripts/Sbutton.js";
