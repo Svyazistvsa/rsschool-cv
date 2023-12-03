@@ -281,6 +281,10 @@ ul>li {
     display: inline-block;
     padding: 1px 6px;
   }
+  
+  .showcase div {
+      width: 90%;
+  }
    
   .curtain {
     position: relative;
@@ -289,7 +293,14 @@ ul>li {
     height: 295px;
     background-color: white;
     opacity: 0.7;
-    filter: blur(4px);
+    filter: blur(14px);
+  }
+    
+  #two-skulls {
+    
+    background-color: red;
+    width: 260px;
+    height: 100%;
   }
     
    .one {
@@ -298,4 +309,5 @@ ul>li {
      background-repeat: no-repeat;
      background-size: 100%;
    }
-}
+
+ 

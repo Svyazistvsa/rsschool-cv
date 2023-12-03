@@ -51,9 +51,7 @@
                 if(!e.target.classList.contains("cButton") && !e.target.classList.contains("mmButton")){
                     if(document.querySelector(".displayOn")) document.querySelector(".displayOn").classList.remove("displayOn");
                 }
-                if(e.target.classList.contains("showcase")){
-                  showDescription(e);
-                }
+                
             }
         </script>
             <h2 class="zag" id="myself">Briefly About Myself</h2>
@@ -71,9 +69,15 @@
             </div>
             <h2 class="zag" id="recent">Recent projects</h2>
             <div class="showcase one">
-              
-              <input type="button" value="Description">
+              <input type="button" popovertarget="two-skulls" value="Description">
               <a href="https://svyazistvsa.github.io/Two-skolls/">Two-skolls</a>
+              <div id="two-skulls" popover>
+<input type="button" popovertarget="skulls" value="Description">
+                
+                 <p>This game is written on the phone without the use of package collectors, while working as a locksmith. And it requires optimization, which I will do later.
+                 </p>
+              </div>
+<div id="skulls"  popover><p>ddt</p></div>
               <div class="curtain"></div>
             </div>
         </main>
