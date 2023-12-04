@@ -38,7 +38,7 @@ body{
         }
     }
 
-    /*#mainMenu{
+    #mainMenu {
         position: relative;
         top: 5px;
         margin: 0;
@@ -48,7 +48,11 @@ body{
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
-    }*/
+    }
+
+    #contacts {
+        display: block;
+    }
 
     .cButton{
         display: none;
@@ -80,14 +84,14 @@ body{
     }
 }
 
-.zag, .mainMenu {
+.zag, #mainMenu {
     background-color:#666;
     text-align: center;
     border: 3px solid #ccc;
     border-radius: 10px;
 }
 
-#head, .zag, .footer, .mainMenu {
+#head, .zag, .footer, #mainMenu {
     color: #ccc;
     text-shadow: 3px 3px #333;
 }
@@ -95,7 +99,7 @@ ul {
     list-style: none ;
 }
 
-ul>li {
+ul > li {
     margin-bottom: 10px;
 }
 
@@ -169,7 +173,7 @@ ul>li {
               width: 150px;
               height: 150px;
             }
-            /*.contacts {
+            #contacts:popover-open {
                 box-sizing: border-box;
                 position: absolute;
                 background-color: #666;
@@ -177,17 +181,17 @@ ul>li {
                 border: 3px solid #ccc;
                 left: auto;
                 right: 5%;
-                top: 200px;
+                top: -320px;
                 z-index: 10;
                 height: 200px;
                 width: 90%;
                 color: #f5f5f5;
                 text-shadow: none;
                 padding-top: 30px;
-            }*/
+            }
         }
         
-        .mmButton, .cButton, #mainMenu > li {
+        .mmButton, .cButton, #mainMenu:popover-open > li {
             position: absolute;
             left: 20%;
             top: 270px;
@@ -205,8 +209,8 @@ ul>li {
             right: 20%;
         }
 
-#mainMenu:popoveropen {
-            position: absolute;
+        #mainMenu:popover-open {
+            /*position: absolute;*/
             left: 0;
             margin: 0;
             min-width: 80%;
@@ -214,11 +218,11 @@ ul>li {
             
         }
 
-        #mainMenu > li {
+        #mainMenu:popover-open > li {
             position: static;
             display: block;
             width: 80%;
-            padding-top : 10px;
+            padding-top: 10px;
             background-color: #f5f5f5;
             border: 3px solid #ccc;           
             text-shadow: none;
@@ -226,20 +230,16 @@ ul>li {
             margin-top: 20px;
         }
 
-        #mainMenu > li > a {
+        #mainMenu:popover-open > li > a {
             text-decoration: none;
             color: #333;
             font-size: 12pt;
+            
+            
+            
         }
 
-         .contacts {
-            display: none;
-        }
-        .displayOn {
-            display: block;
-        }
-        
-        .myGit, .logo{
+        .myGit, .logo {
           width: 60px;
           height: 30px;
         }
@@ -311,4 +311,4 @@ ul>li {
      background-size: 100%;
    }
 
- 
+}

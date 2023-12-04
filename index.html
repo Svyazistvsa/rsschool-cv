@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="js/scripts/Sbutton.js" type="module"></script>
-    
+    <link rel="stylesheet" href="style.css">    
+    <script src="js/scripts/Sbutton.js" type="module"></script>    
     <script src="js/index.js" type="module"></script>
 </head>
 <body>
@@ -19,8 +17,8 @@
                 <h3>Hi, I'm Sergey.</h3>
                 <h1>Front-End Developer</h1>
             </div>
-            <div class="contact" >
-                <ul class="contacts">
+            <div class="contact">
+                <ul class="contacts" id="contacts" popover>
                     <li><img src="img/image/telephon.png" value="phone" class="icon">+79228005978</li>
                     <li><img src="img/image/pngwing.com.png" value="gmail" class="icon">sviazist.vsa@gmail.com</li>
                     <li><img src="img/image/github.svg" value="github" class="icon">Svyazistvsa</li>
@@ -29,7 +27,7 @@
             
         </header>
         <button class="mmButton" popovertarget="mainMenu">navigation</button>
-        <button class="cButton">contacts</button>
+        <button class="cButton" popovertarget="contacts">contacts</button>
         <ul  id="mainMenu" popover >
             <li><a href="#head">head</a></li>
             <li><a href="#myself">Myself</a></li>
