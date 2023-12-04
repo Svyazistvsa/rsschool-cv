@@ -38,7 +38,7 @@ body{
         }
     }
 
-    .mainMenu{
+    /*#mainMenu{
         position: relative;
         top: 5px;
         margin: 0;
@@ -48,7 +48,7 @@ body{
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
-    }
+    }*/
 
     .cButton{
         display: none;
@@ -58,7 +58,7 @@ body{
         display: none;
     }
 
-    .mainMenu > li {
+    #mainMenu > li {
         position: relative;
         top: 5px;
     }
@@ -169,7 +169,7 @@ ul>li {
               width: 150px;
               height: 150px;
             }
-            .contacts {
+            /*.contacts {
                 box-sizing: border-box;
                 position: absolute;
                 background-color: #666;
@@ -184,10 +184,10 @@ ul>li {
                 color: #f5f5f5;
                 text-shadow: none;
                 padding-top: 30px;
-            }
+            }*/
         }
         
-        .mmButton, .cButton, .mainMenu > li {
+        .mmButton, .cButton, #mainMenu > li {
             position: absolute;
             left: 20%;
             top: 270px;
@@ -205,15 +205,16 @@ ul>li {
             right: 20%;
         }
 
-        .mainMenu {
+#mainMenu:popoveropen {
             position: absolute;
             left: 0;
             margin: 0;
             min-width: 80%;
-            min-height: 98.5%;            
+            min-height: 98.5%;
+            
         }
 
-        .mainMenu > li {
+        #mainMenu > li {
             position: static;
             display: block;
             width: 80%;
@@ -225,13 +226,13 @@ ul>li {
             margin-top: 20px;
         }
 
-        .mainMenu > li > a {
+        #mainMenu > li > a {
             text-decoration: none;
             color: #333;
             font-size: 12pt;
         }
 
-        .mainMenu, .contacts {
+         .contacts {
             display: none;
         }
         .displayOn {

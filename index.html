@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js/scripts/button.js" type="module"></script>
+    
     <script src="js/scripts/Sbutton.js" type="module"></script>
     
     <script src="js/index.js" type="module"></script>
@@ -19,7 +19,7 @@
                 <h3>Hi, I'm Sergey.</h3>
                 <h1>Front-End Developer</h1>
             </div>
-            <div class="contact">
+            <div class="contact" >
                 <ul class="contacts">
                     <li><img src="img/image/telephon.png" value="phone" class="icon">+79228005978</li>
                     <li><img src="img/image/pngwing.com.png" value="gmail" class="icon">sviazist.vsa@gmail.com</li>
@@ -28,9 +28,9 @@
             </div>
             
         </header>
-        <button class="mmButton">navigation</button>
+        <button class="mmButton" popovertarget="mainMenu">navigation</button>
         <button class="cButton">contacts</button>
-        <ul class="mainMenu">
+        <ul  id="mainMenu" popover >
             <li><a href="#head">head</a></li>
             <li><a href="#myself">Myself</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -38,22 +38,9 @@
         </ul>
         
         <main class="content">
-        <script type="module">
-            import {togButton} from "./js/index.js";
-            import {showDescription, descriptions} from "./js/index.js";
-            document.body.onclick = function(e){
-                if(e.target.classList.contains("cButton")){
-                    togButton( e, ".cButton", ".contacts");
-                }
-                if(e.target.classList.contains("mmButton")){
-                    togButton( e, ".mmButton", ".mainMenu");
-                }
-                if(!e.target.classList.contains("cButton") && !e.target.classList.contains("mmButton")){
-                    if(document.querySelector(".displayOn")) document.querySelector(".displayOn").classList.remove("displayOn");
-                }
-                
-            }
-        </script>
+       <!--<script type="module">
+           
+        </script>-->
             <h2 class="zag" id="myself">Briefly About Myself</h2>
             <p class="text">
                 I'm working on metallurgical plant. My profession is locksmith. I'm wont change my profession and do what I've always dreamed of. That is the main reason why I’ve decided to engage in frontend more seriosly. Until recently, I was engaged exclusively ad a leisure activity.
