@@ -36,37 +36,75 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
         }
+        
+        .salute {
+            align-self: flex-start;
+        }
     }
 
-    #mainMenu {
+    #mainMenu:popover-open {
         position: relative;
-        top: 5px;
+        top: 215px;
+        left: 50px;
         margin: 0;
-        min-width: 400px;
-        height: 30px;
+        min-width: 300px;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
     }
-
-    #contacts {
-        display: block;
-    }
-
-    .cButton{
-        display: none;
-    }
-
-    .mmButton{
-        display: none;
-    }
-
-    #mainMenu > li {
-        position: relative;
-        top: 5px;
-    }
     
+    .mmButton, .cButton, #mainMenu:popover-open > li {
+            position: absolute;
+            left: 35%;
+            top: 170px;
+            display: block;
+            width: 80px;
+            height: 40px;
+            border-radius: 80px;
+            border: 3px solid #666;
+            background-color: #f5f5f5;
+            font-size: 10pt;
+        }
+    
+    #mainMenu:popover-open > li {
+            position: static;
+            width: 80%;
+            padding-top: 10px;
+            text-shadow: none;
+            height: 30px;
+            margin-top: 20px;
+        }
+        
+        .cButton{
+            left: auto;
+            right: 35%;
+         }
+        
+        #mainMenu:popover-open > li > a {
+            text-decoration: none;
+            color: #333;
+            font-size: 12pt;
+        }
+
+        #contacts:popover-open {
+                box-sizing: border-box;
+                position: absolute;
+                background-color: #666;
+                border-radius: 50px;
+                border: 3px solid #ccc;
+                left: auto;
+                right: 10%;
+                top: -70px;
+                height: 200px;
+                width: 300px;
+                color: #f5f5f5;
+                text-shadow: none;
+                padding-top: 30px;
+            }
+    
+    
+
     .content{
         width: 80%;
     }
@@ -91,7 +129,7 @@ body{
     border-radius: 10px;
 }
 
-#head, .zag, .footer, #mainMenu {
+#head, .zag, .footer {
     color: #ccc;
     text-shadow: 3px 3px #333;
 }
@@ -173,72 +211,30 @@ ul > li {
               width: 150px;
               height: 150px;
             }
-            #contacts:popover-open {
-                box-sizing: border-box;
-                position: absolute;
-                background-color: #666;
-                border-radius: 50px;
-                border: 3px solid #ccc;
-                left: auto;
-                right: 5%;
-                top: -320px;
-                z-index: 10;
-                height: 200px;
-                width: 90%;
-                color: #f5f5f5;
-                text-shadow: none;
-                padding-top: 30px;
-            }
+            
+        .salute {
+            align-self: center;
         }
+            
         
-        .mmButton, .cButton, #mainMenu:popover-open > li {
-            position: absolute;
-            left: 20%;
-            top: 270px;
-            display: block;
-            width: 80px;
-            height: 40px;
-            border-radius: 80px;
-            border: 3px solid #666;
-            background-color: #f5f5f5;
-            font-size: 10pt;
+        
+       .mmButton,.cButton{
+         top: 275px;
+         left: 20%;
         }
-
         .cButton{
             left: auto;
             right: 20%;
         }
 
         #mainMenu:popover-open {
-            /*position: absolute;*/
+            top: 5px;
             left: 0;
             margin: 0;
             min-width: 80%;
-            min-height: 98.5%;
-            
+            min-height: 400px;
         }
-
-        #mainMenu:popover-open > li {
-            position: static;
-            display: block;
-            width: 80%;
-            padding-top: 10px;
-            background-color: #f5f5f5;
-            border: 3px solid #ccc;           
-            text-shadow: none;
-            height: 30px;
-            margin-top: 20px;
-        }
-
-        #mainMenu:popover-open > li > a {
-            text-decoration: none;
-            color: #333;
-            font-size: 12pt;
-            
-            
-            
-        }
-
+        
         .myGit, .logo {
           width: 60px;
           height: 30px;
@@ -248,7 +244,7 @@ ul > li {
           font-size: 10pt;
         }   
 
-    }
+    
    .salute > h1 {
      font-size: 12pt;
    }
@@ -310,5 +306,7 @@ ul > li {
      background-repeat: no-repeat;
      background-size: 100%;
    }
-
+.footer {
+    height: 70px;
+  }
 }
