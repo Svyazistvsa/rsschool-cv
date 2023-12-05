@@ -55,9 +55,9 @@ body{
     }
     
     .mmButton, .cButton, #mainMenu:popover-open > li {
-            position: absolute;
-            left: 35%;
-            top: 170px;
+            position: relative;
+            left: -100px;
+            top: -50px;
             display: block;
             width: 80px;
             height: 40px;
@@ -78,7 +78,8 @@ body{
         
         .cButton{
             left: auto;
-            right: 35%;
+            right: -100px;
+            top: -90px;
          }
         
         #mainMenu:popover-open > li > a {
@@ -197,34 +198,33 @@ ul > li {
     font-size: 13pt;
 }
 
-@media(max-width: 420px ) and (min-width:320px){
+@media(max-width: 420px ) and (min-width:320px) {
     
-    #container{
+    #container {
         max-width: 420px;
         min-width: 320px;
+
         #head { 
             height: 320px;
-            flex-flow: column nowrap;
+            flex-flow: column;
             align-items: center;
-            #photo{
+
+            #photo {
               margin-left: 50px;  
               width: 150px;
               height: 150px;
             }
-            
-        .salute {
-            align-self: center;
         }
-            
+
         
         
-       .mmButton,.cButton{
-         top: 275px;
-         left: 20%;
+        .mmButton, .cButton {
+            left: -20%;
         }
+        
         .cButton{
             left: auto;
-            right: 20%;
+            right: -20%;
         }
 
         #mainMenu:popover-open {
@@ -240,11 +240,15 @@ ul > li {
           height: 30px;
         }
         
-        .myGit > a, .logo >a {
+        .myGit > a, .logo > a {
           font-size: 10pt;
         }   
-
+    }   
     
+    .salute {
+        align-self: flex-end;
+    }    
+   
    .salute > h1 {
      font-size: 12pt;
    }
@@ -260,7 +264,7 @@ ul > li {
      border-radius: 6px;
    }
    
-  .showcase input, .showcase a{
+  .showcase input, .showcase a {
     position: relative;
     top: 150px;
     left: 14px;
@@ -293,8 +297,7 @@ ul > li {
     filter: blur(14px);
   }
     
-  #two-skulls {
-    
+  #two-skulls {    
     background-color: red;
     width: 260px;
     height: 100%;
@@ -306,7 +309,8 @@ ul > li {
      background-repeat: no-repeat;
      background-size: 100%;
    }
-.footer {
-    height: 70px;
-  }
+
+   .footer {
+   height: 70px;
+   }
 }
