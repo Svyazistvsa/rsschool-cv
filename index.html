@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">    
-    <script src="js/scripts/Sbutton.js" type="module"></script>    
+    <script src="js/scripts/popoverButton.js" type="module"></script>    
     <script src="js/index.js" type="module"></script>
 </head>
 <body>
@@ -28,13 +28,17 @@
         </header>
         <button class="mmButton" popovertarget="mainMenu">navigation</button>
         <button class="cButton" popovertarget="contacts">contacts</button>
-        <ul  id="mainMenu" popover >
+        <ul  id="mainMenu" popover>
             <li><a href="#head">head</a></li>
             <li><a href="#myself">Myself</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#recent">Recent projects</a></li>
         </ul>
-        
+        <script type="module">
+            import {menuClick} from "./js/index.js";
+            let popMenu = document.getElementById("mainMenu");
+            popMenu.addEventListener("click", menuClick);
+        </script>
         <main class="content">
             <h2 class="zag" id="myself">Briefly About Myself</h2>
             <p class="text">
