@@ -300,18 +300,22 @@ ul > li {
     filter: blur(14px);
   }
     
-  #two-skulls {    
-    background-color: red;
+  .two-skulls {    
+    display: none;
     width: 260px;
     height: 100%;
   }
+
+  .displayOn {
+    display: block;
+  }
     
-   .one {
-     background-image: url(img/showcase/Two-skulls.jpg);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: 100%;
-   }
+  .one {
+    background-image: url(img/showcase/Two-skulls.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
    .footer {
    height: 70px;
