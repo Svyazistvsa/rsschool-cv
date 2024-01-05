@@ -1,7 +1,10 @@
 "use strict"
 
 export function descFunc (event){
-    if(event.target.classList.f){
-        //подумать как одним общим обработчиком событий обработать все кнопки description
+    if(event.target.classList.contains("disBut")){
+        let but = event.target,
+            text = document.querySelector(".disBut ~ div");
+        text.classList.toggle("displayOn");
+        
     }
 }
