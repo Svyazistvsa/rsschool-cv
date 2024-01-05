@@ -137,6 +137,13 @@ body{
     color: #ccc;
     text-shadow: 3px 3px #333;
 }
+
+.mainText {
+    color: #333;
+    font-size: 15pt;
+    text-shadow: 1px 1px 5px #666;
+}
+
 ul {
     list-style: none ;
 }
@@ -188,6 +195,8 @@ ul > li {
 .red, .blue, .yellow {
     flex-grow: 1;
     padding-top: 20px;
+    margin-left: 3px;
+    border-radius: 4px;
 }
 
 .yellow {
@@ -364,50 +373,34 @@ ul > li {
     font-size: 13pt;
     }
 
+    .red, .blue, .yellow {
+        margin-top: 2px;
+    }    
+
     .showcase {
         width: 280px;
         height: 300px;
-        border: 3px solid #333;
-        border-radius: 6px;
+        
       }
       
      .showcase input, .showcase a {
-       position: relative;
-       top: 150px;
+       top: 250px;
        left: 14px;
        font-size: 14pt;
-       background-color: #999;
-       border: 1px solid #333;
-       border-radius: 5px;
-       z-index: 5;
+       
      }
      
      .showcase a {
        left: 40px;
-       text-decoration: none;
-       color: red;
-       display: inline-block;
-       padding: 1px 6px;
      }
      
      .showcase div {
          width: 90%;
      }
-      
-     .curtain {
-       position: relative;
-       top: -21px;
-       width: 280px;
-       height: 295px;
-       background-color: white;
-       opacity: 0.7;
-       filter: blur(14px);
-     }
        
-     .text {    
-       display: none;
-       width: 260px;
-       height: 100%;
+     .text {      
+       max-width: 260px;
+       max-height: 250px;
      }
    
      .displayOn {
