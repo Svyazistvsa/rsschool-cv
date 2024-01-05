@@ -172,6 +172,37 @@ ul > li {
     margin-right: 10px;
 }
 
+.skillBox {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 70px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 22pt;
+    text-align: center;
+    color: #faf8f8;
+    text-shadow: 0 0 5px #333;
+}
+
+.red, .blue, .yellow {
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.yellow {
+    flex-grow: 3;
+    background-color: rgb(189, 189, 8);    
+}
+
+.red {
+    background-color: rgb(183, 13, 13);
+}
+
+.blue {
+    background-color: rgb(7, 7, 176);
+}
+
 .myGit, .logo {
     background-color: #999;
     width: 120px;
@@ -259,7 +290,16 @@ ul > li {
    .salute > h3 {
      font-size: 10pt;
    }
-    
+
+   .skillBox {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 170px;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 13pt;
+    }
+
    .showcase {
      width: 280px;
      height: 300px;
