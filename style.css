@@ -126,14 +126,14 @@ body{
     }
 }
 
-.zag, #mainMenu {
+.zag, #mainMenu, .text {
     background-color:#666;
     text-align: center;
     border: 3px solid #ccc;
     border-radius: 10px;
 }
 
-#head, .zag, .footer {
+#head, .zag, .footer, .text {
     color: #ccc;
     text-shadow: 3px 3px #333;
 }
@@ -214,7 +214,7 @@ ul > li {
   
  .showcase input, .showcase a {
    position: relative;
-   top: 150px;
+   top: 200px;
    left: 20%;
    font-size: 16pt;
    background-color: #999;
@@ -250,9 +250,10 @@ ul > li {
  .text {    
    position: absolute;
    display: none;
-   max-width: 260px;
-   max-height: 100px;
-   z-index: 5;
+   max-width: 360px;
+   max-height: 200px;
+   z-index: 15;
+   font-size: 16pt;
  }
 
  .displayOn {
