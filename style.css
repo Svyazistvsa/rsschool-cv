@@ -353,7 +353,8 @@ ul > li {
     }   
     
     .salute {
-        align-self: flex-end;
+        align-self: flex-start;
+        margin-left: 30%;
     }    
    
    .salute > h1 {
