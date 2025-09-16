@@ -418,6 +418,13 @@ ul > li {
        background-size: 100%;
      }
 
+     .two {
+       background-image: url(img/showcase/my-bubble.png);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: 100%;
+     }
+
    .footer {
    height: 70px;
    }
